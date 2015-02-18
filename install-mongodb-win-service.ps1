@@ -38,4 +38,4 @@ if ($env:Path -like "*MongoDB") {
     write-host "$installPath is already added to your system's environment variables"
 	exit 
 }
-[Environment]::SetEnvironmentVariable("Path", $env:Path + ";" + $dbPath + "\bin", "Machine")
+[Environment]::SetEnvironmentVariable("Path", $env:Path + ";" + $installPath + "\bin", "Machine")
