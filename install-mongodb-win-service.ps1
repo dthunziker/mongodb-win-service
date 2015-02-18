@@ -22,6 +22,7 @@ logpath={0}\log\mongo.log
 smallfiles=true
 noprealloc=true
 "@
+$configPath = "$installPath\mongod.conf"
 $stream = [System.IO.StreamWriter] $configPath
 $stream.Write($configFileContents, $installPath)
 $stream.close()
