@@ -7,11 +7,14 @@
 4. Run the PowerShell script as Administrator
 
 To reverse what this script does, run: 
-> net stop MongoDB
-> sc delete MongoDB
-> rmdir C:\InstallPath\data
-> rmdir C:\InstallPath\log
-> del C:\InstallPath\mongod.conf
+
+```
+net stop MongoDB
+sc delete MongoDB
+rmdir C:\InstallPath\data
+rmdir C:\InstallPath\log
+del C:\InstallPath\mongod.conf
+```
 
 Also, remember to clear out the MongoDB install path from your Environment Variables.
 
